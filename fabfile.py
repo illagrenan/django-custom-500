@@ -9,7 +9,6 @@ import sys
 
 import six
 
-
 if not six.PY2:
     print("Run Fabfile only under Python 2.x")
     sys.exit(0)
