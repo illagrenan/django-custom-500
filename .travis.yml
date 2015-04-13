@@ -19,11 +19,9 @@ env:
 install:
     - pip install -q Django==$DJANGO
     - if [[ $TRAVIS_PYTHON_VERSION != 3.3 || $TRAVIS_PYTHON_VERSION != 3.4 ]]; then pip install fabric unittest2; fi
-    - pip install xmltodict
-    - pip install coveralls
-    - pip install nose
-    - pip install future
-    - pip install six
+    - pip install django-annoying requests
+    - pip install coveralls nose
+    - pip install future six
 script:
     - python setup.py build
     - python setup.py sdist
