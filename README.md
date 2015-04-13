@@ -8,8 +8,30 @@
 
 ## Installation ##
 
-**This package is not yet on PyPI.**
+**This package is not yet on PyPI. Download it from Github:**
 
 ```bash
 pip install --upgrade git+git://github.com/illagrenan/django-custom-500.git#egg=django-custom-500
+```
+
+
+**Add `django_custom_500` to `INSTALLED_APPS`:**
+```python
+INSTALLED_APPS = (
+    'django_custom_500',
+)
+```
+
+## Usage ##
+
+Create `500.html` in your `template` folder.
+
+**OR**
+
+Set `CUSTOM_500_TEMPLATE` in your settings.
+
+Example:
+
+```python
+CUSTOM_500_TEMPLATE = "my/path/to/500.html"
 ```
