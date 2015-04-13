@@ -29,10 +29,10 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=['django_custom_500', 'django-annoying',],
+    packages=['django_custom_500'],
 
 
-    install_requires=['django'],
+    install_requires=['django', 'django-annoying'],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',
