@@ -4,7 +4,7 @@ from setuptools import setup
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
-    name='color_printer',
+    name='django_custom_500',
     version='0.0.1',
     description='TODO Add description',
 
@@ -20,7 +20,7 @@ setup(
     # ########################################################################
     long_description=(open('_generated/README.rst').read()),
 
-    url='https://github.com/illagrenan/color-printer',
+    url='https://github.com/illagrenan/django-custom-500',
     license='MIT',
     author='Vašek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
@@ -29,10 +29,10 @@ setup(
     # installed (it’s still part of the source distribution)
     # since that would wreak havoc.
     # find_packages(exclude=['tests*'])
-    packages=['color_printer'],
+    packages=['django_custom_500'],
 
 
-    install_requires=['colorama'],
+    install_requires=['django'],
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 2.7',

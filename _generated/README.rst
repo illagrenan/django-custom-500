@@ -1,5 +1,5 @@
-Color printer
-=============
+Django custom 500
+=================
 
 |Travis CI Badge|   |Coverage Status|   |Requirements Status|
 
@@ -10,27 +10,11 @@ Installation
 
 .. code:: bash
 
-    pip install --upgrade git+git://github.com/illagrenan/color-printer.git#egg=color-printer
+    pip install --upgrade git+git://github.com/illagrenan/django-custom-500.git#egg=django-custom-500
 
-Usage
------
-
-.. code:: bash
-
-    from color_printer import colors
-
-    colors.black("Foo bar")
-    colors.red("Foo bar")
-    colors.green("Foo bar")
-    colors.yellow("Foo bar")
-    colors.blue("Foo bar")
-    colors.magenta("Foo bar")
-    colors.cyan("Foo bar")
-    colors.white("Foo bar")
-
-.. |Travis CI Badge| image:: https://api.travis-ci.org/illagrenan/color_printer.png
-   :target: https://travis-ci.org/illagrenan/color_printer
-.. |Coverage Status| image:: https://coveralls.io/repos/illagrenan/color_printer/badge.png
-   :target: https://coveralls.io/r/illagrenan/color_printer
-.. |Requirements Status| image:: https://requires.io/github/illagrenan/color_printer/requirements.svg?branch=master
-   :target: https://requires.io/github/illagrenan/color_printer/requirements/?branch=master
+.. |Travis CI Badge| image:: https://api.travis-ci.org/illagrenan/django-custom-500.png
+   :target: https://travis-ci.org/illagrenan/django-custom-500
+.. |Coverage Status| image:: https://coveralls.io/repos/illagrenan/django-custom-500/badge.svg?branch=master
+   :target: https://coveralls.io/r/illagrenan/django-custom-500?branch=master
+.. |Requirements Status| image:: https://requires.io/github/illagrenan/django-custom-500/requirements.svg?branch=master
+   :target: https://requires.io/github/illagrenan/django-custom-500/requirements/?branch=master

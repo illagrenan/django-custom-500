@@ -28,7 +28,7 @@ def test_install():
         print("Uninstall OK.")
 
     local("pip install --use-wheel --no-index --find-links dist django_custom_500")
-    local("pip uninstall color_printer --yes")
+    local("pip uninstall django_custom_500 --yes")
 
     print("Install OK.")
 
