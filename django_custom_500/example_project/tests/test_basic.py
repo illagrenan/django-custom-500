@@ -16,7 +16,7 @@ class NormalViewTestCase(TestCase):
     def test_normal_view(self):
         ok_response = self.client.get('/normal-view-that-returns-data')
 
-        self.assertIn('42', ok_response.content)
+        self.assertIn('42', str(ok_response.content))
 
 
 class InternalErrorTestCase(LiveServerTestCase):
@@ -24,7 +24,7 @@ class InternalErrorTestCase(LiveServerTestCase):
         error_response = requests.get('%s%s' % (self.live_server_url, '/view-that-raises-value-error'))
 
         self.assertEqual(error_response.status_code, 500)
-        self.assertIn("500 Internal Server Error", error_response.content)
+        self.assertIn("500 Internal Server Error", str(error_response.content))
 
 
 if __name__ == "__main__":
