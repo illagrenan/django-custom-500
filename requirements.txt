@@ -2,11 +2,10 @@ Fabric
 coverage
 ecdsa
 nose
-paramiko
-pycrypto
 unittest2
 wheel
 wsgiref
 colorama
 future
 six
+requests
