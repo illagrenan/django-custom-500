@@ -2,6 +2,21 @@
 
 from setuptools import setup
 
+try:
+    from pypandoc import convert
+
+    def read_md(file_name):
+        # http://stackoverflow.com/a/23265673/752142
+        return convert(file_name, 'rst')
+except ImportError:
+    print("warning: pypandoc module not found, could not convert Markdown to RST")
+
+    def read_md(file_name):
+        try:
+            return open(file_name, 'r').read()
+        except UnicodeDecodeError:
+            return "Encoding problems with README.md"
+
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='django_custom_500',
@@ -18,7 +33,7 @@ setup(
     #
     # $ fab build
     # ########################################################################
-    long_description=(open('_generated/README.rst').read()),
+    long_description=read_md('README.md'),
 
     url='https://github.com/illagrenan/django-custom-500',
     license='MIT',
