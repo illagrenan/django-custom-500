@@ -23,8 +23,10 @@ install:
     - pip install coveralls nose
     - pip install future six
 script:
+    - rm -f fabfile.py
     - python setup.py build
     - python setup.py sdist
+    - python setup.py bdist_wheel
     - nosetests -v --with-coverage --cover-package=django_custom_500 --cover-tests --cover-erase --with-doctest --nocapture
 after_success:
     - coveralls
