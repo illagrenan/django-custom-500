@@ -16,7 +16,7 @@ class NormalViewTestCase(TestCase):
     def test_normal_view(self):
         ok_response = self.client.get('/normal-view-that-returns-data')
 
-        self.assertTrue('42' in ok_response.content)
+        self.assertIn('42', ok_response.content)
 
 
 class InternalErrorTestCase(LiveServerTestCase):
