@@ -34,4 +34,4 @@ matrix:
     # Taken from: https://github.com/darklow/django-suit/blob/develop/.travis.yml
     # Django doesn't support following combinations
     - python: 3.3
-      env: DJANGO=1.9.0
+      env: DJANGO=1.9.4
