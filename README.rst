@@ -24,6 +24,8 @@ Django custom 500
 Installation
 ------------
 
+Supported Python versions are: ``2.7``, ``3.3.``, ``3.4``, ``3.5`` and ``pypy``. Supported Django versions are: ``1.8.x`` and ``1.9.x``.
+
 .. code:: bash
 
     pip install --upgrade django-custom-500
