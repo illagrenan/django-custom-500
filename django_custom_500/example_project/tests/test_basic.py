@@ -3,9 +3,8 @@
 
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 
-"""Tests for django-custom-500's decorators"""
-
 import unittest
+
 import requests
 from django.test import TestCase, LiveServerTestCase
 

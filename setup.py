@@ -14,7 +14,7 @@ setup(
     author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
     packages=['django_custom_500'],
-    install_requires=['django', 'django-annoying'],
+    install_requires=['django'],
     include_package_data=True,
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
