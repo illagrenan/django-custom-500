@@ -1,62 +1,33 @@
 # coding=utf-8
 
+import io
+
 from setuptools import setup
 
-try:
-    from pypandoc import convert
-
-    def read_md(file_name):
-        # http://stackoverflow.com/a/23265673/752142
-        return convert(file_name, 'rst')
-except ImportError:
-    print("warning: pypandoc module not found, could not convert Markdown to RST")
-
-    def read_md(file_name):
-        try:
-            return open(file_name, 'r').read()
-        except UnicodeDecodeError:
-            return "Encoding problems with README.md"
-
-# https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 setup(
     name='django_custom_500',
-    version='0.0.1',
-    description='TODO Add description',
-
-    # ########################################################################
-    #
-    # README.rst is generated from README.md:
-    #
-    # $ pandoc --from=markdown --to=rst README.md -o .tmp/README.rst
-    #
-    # ~ OR ~
-    #
-    # $ fab build
-    # ########################################################################
-    long_description=read_md('README.md'),
-
+    version='0.1.0',
+    description='Create custom 500.html for Django with optional Sentry support.',
+    long_description=io.open('README.rst').read(),
     url='https://github.com/illagrenan/django-custom-500',
     license='MIT',
-    author='Vašek Dohnal',
+    author='Vasek Dohnal',
     author_email='vaclav.dohnal@gmail.com',
-
-    # The exclude makes sure that a top-level tests package doesn’t get
-    # installed (it’s still part of the source distribution)
-    # since that would wreak havoc.
-    # find_packages(exclude=['tests*'])
     packages=['django_custom_500'],
-
-
-    install_requires=['django', 'django-annoying'],
+    install_requires=['django'],
     include_package_data=True,
     classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'Environment :: Web Environment',
+        'License :: OSI Approved :: MIT License',
+        "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
-        'License :: OSI Approved :: MIT License',
-        'Development Status :: 3 - Alpha',
-        'Environment :: Web Environment',
-        'Environment :: Console',
-        'Intended Audience :: Developers'
+        'Programming Language :: Python :: 3.5',
     ],
+    test_suite='tests',
+    tests_require=[]
 )

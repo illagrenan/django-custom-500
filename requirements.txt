@@ -9,3 +9,4 @@ colorama
 future
 six
 requests
+pygments
