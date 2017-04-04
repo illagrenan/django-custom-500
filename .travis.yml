@@ -18,7 +18,7 @@ env:
 before_install:
   - export DJANGO_SETTINGS_MODULE=django_custom_500.example_project.settings
 install:
-    - pip install -q Django==$DJANGO
+    - pip install --quiet --upgrade "$DJANGO"
     - pip install django-annoying
     - pip install requests
     - pip install nose
