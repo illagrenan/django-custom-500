@@ -50,7 +50,7 @@ def build():
 @task()
 def publish():
     if confirm(u'Really publish?', default=False):
-        local('python setup.py sdist upload -r pypi')
-        local('python setup.py bdist_wheel upload -r pypi')
+        local('python setup.py sdist upload')
+        local('python setup.py bdist_wheel upload')
 
         print("Published.")
