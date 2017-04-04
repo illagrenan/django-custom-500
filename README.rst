@@ -24,7 +24,7 @@ Django custom 500
 Installation
 ------------
 
-Supported Python versions are: ``2.7``, ``3.3.``, ``3.4``, ``3.5`` and ``pypy``. Supported Django versions are: ``1.8.x`` and ``1.9.x``.
+Supported Python versions are: ``2.7``, ``3.3.``, ``3.4``, ``3.5``, ``3.6``, ``3.7`` and ``pypy``. Supported Django versions are: ``1.8.x``, ``1.9.x``, ``1.10.x`` and ``1.11.x``.
 
 .. code:: bash
 
@@ -58,7 +58,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 - 2016 Vašek Dohnal
+Copyright (c) 2015–2017 Vašek Dohnal
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the
