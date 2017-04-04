@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='django_custom_500',
-    version='0.1.0',
+    version='0.1.1',
     description='Create custom 500.html for Django with optional Sentry support.',
     long_description=io.open('README.rst', encoding='utf-8').read(),
     url='https://github.com/illagrenan/django-custom-500',
