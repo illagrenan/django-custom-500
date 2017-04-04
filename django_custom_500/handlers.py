@@ -5,7 +5,7 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 from django.conf import settings
 from django.http import HttpResponseServerError
-from django.template import Context, loader
+from django.template import loader
 
 
 def handler500(request):
@@ -19,12 +19,4 @@ def handler500(request):
     template_500 = getattr(settings, 'CUSTOM_500_TEMPLATE', '500.html')
     template = loader.get_template(template_500)
 
-    return HttpResponseServerError(
-        template.render(
-            Context(
-                {
-                    'request': request
-                }
-            )
-        )
-    )
+    return HttpResponseServerError(template.render({'request': request}))
