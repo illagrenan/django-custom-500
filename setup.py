@@ -8,7 +8,7 @@ setup(
     name='django_custom_500',
     version='0.1.0',
     description='Create custom 500.html for Django with optional Sentry support.',
-    long_description=io.open('README.rst').read(),
+    long_description=io.open('README.rst', encoding='utf-8').read(),
     url='https://github.com/illagrenan/django-custom-500',
     license='MIT',
     author='Vasek Dohnal',
