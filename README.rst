@@ -30,7 +30,7 @@ Supported Python versions are: ``2.7``, ``3.4``, ``3.5``, ``3.6``, ``3.7`` and `
 
     pip install --upgrade django-custom-500
 
-**Add ``django_custom_500`` to ``INSTALLED_APPS``:**
+Add ``django_custom_500`` to ``INSTALLED_APPS``:
 
 .. code:: python
 
